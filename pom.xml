@@ -20,7 +20,21 @@
 
   <profiles>
     <!-- Profile for Java 8 -->
-
+    <profile>
+        <id>java8</id>
+        <activation>
+            <jdk>1.8</jdk>
+        </activation>
+        <dependencies>
+            <!-- Define dependencies compatible with Java 8 -->
+            <dependency>
+                <groupId>org.example</groupId>
+                 <artifactId>test2-jvm</artifactId>
+                    <version>1.4</version>
+            </dependency>
+            <!-- Add other Java 8 dependencies -->
+        </dependencies>
+    </profile>
 
     <!-- Profile for Java 11 -->
     <profile>
