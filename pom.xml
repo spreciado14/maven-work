@@ -23,14 +23,14 @@
     <profile>
         <id>java8</id>
         <activation>
-            <jdk>${java.version.8}</jdk>
+            <jdk>1.8</jdk>
         </activation>
         <dependencies>
             <!-- Define dependencies compatible with Java 8 -->
             <dependency>
                 <groupId>org.example</groupId>
-                <artifactId>example-library</artifactId>
-                <version>1.0.0</version>
+                 <artifactId>test2-jvm</artifactId>
+                    <version>1.4</version>
             </dependency>
             <!-- Add other Java 8 dependencies -->
         </dependencies>
@@ -40,49 +40,24 @@
     <profile>
         <id>java11</id>
         <activation>
-            <jdk>${java.version.11}</jdk>
+            <jdk>11</jdk>
         </activation>
-        <dependencies>
-            <!-- Define dependencies compatible with Java 11 -->
-            <dependency>
-                <groupId>org.example</groupId>
-                <artifactId>example-library</artifactId>
-                <version>2.0.0</version>
-            </dependency>
-            <!-- Add other Java 11 dependencies -->
-        </dependencies>
     </profile>
 
         <!-- Profile for Java 14 -->
     <profile>
         <id>java14</id>
         <activation>
-            <jdk>${java.version.14}</jdk>
+            <jdk>14</jdk>
         </activation>
-        <dependencies>
-            <!-- Define dependencies compatible with Java 11 -->
-            <dependency>
-                <groupId>org.example</groupId>
-                <artifactId>example-library</artifactId>
-                <version>3.0.0</version>
-            </dependency>
-        </dependencies>
     </profile>
 
      <!-- Profile for Java 17 -->
     <profile>
         <id>java17</id>
         <activation>
-            <jdk>${java.version.17}</jdk>
+            <jdk>17</jdk>
         </activation>
-        <dependencies>
-            <!-- Define dependencies compatible with Java 11 -->
-            <dependency>
-                <groupId>org.example</groupId>
-                <artifactId>example-library</artifactId>
-                <version>4.0.0</version>
-            </dependency>
-        </dependencies>
     </profile>
 </profiles>
 
@@ -96,6 +71,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
