@@ -18,6 +18,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 8
+          distribution: 'adopt'
 
       - name: Validate POM XML (Java 8)
         run: mvn validate --file pom.xml -Pjava8
@@ -26,6 +27,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
+          distribution: 'adopt'
 
       - name: Validate POM XML (Java 11)
         run: mvn validate --file pom.xml -Pjava11
